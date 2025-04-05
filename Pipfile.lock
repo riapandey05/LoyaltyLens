@@ -1759,7 +1759,7 @@
             ],
             "index": "pypi",
             "markers": "python_version >= '3.9'",
-            "version": "==2.18.0"
+            "version": "*"
         },
         "tensorflow-intel": {
             "hashes": [

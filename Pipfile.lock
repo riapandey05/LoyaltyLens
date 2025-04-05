@@ -1769,7 +1769,7 @@
                 "sha256:af380d326e146f2d184a940ccf8350e9b6dc06a0530bfaa3a557b73819c4017b"
             ],
             "markers": "python_version >= '3.9'",
-            "version": "==2.18.0"
+            "version": "*"
         },
         "termcolor": {
             "hashes": [

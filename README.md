@@ -11,8 +11,8 @@ The project includes a web-based interface built with Streamlit for user interac
 - **Model Persistence**: Trained model and preprocessing objects are saved and reused for predictions.
 
 ## Model Details
-Architecture: The model is a neural network built using TensorFlow/Keras.
-Input Features:
+-Architecture: The model is a neural network built using TensorFlow/Keras.
+-Input Features:
 CreditScore,
 Geography,
 Gender,
@@ -23,17 +23,17 @@ NumOfProducts,
 HasCrCard,
 IsActiveMember,
 EstimatedSalary,
-Preprocessing:Features are scaled using StandardScaler.
+-Preprocessing:Features are scaled using StandardScaler.
 Categorical features are encoded using OneHotEncoder and LabelEncoder.
 
 Dependencies
 Key dependencies include:
 
-tensorflow==2.18.0
-streamlit==1.42.1
-scikit-learn==1.6.1
-pandas==2.2.3
-numpy==2.0.2
+-tensorflow==2.18.0
+-streamlit==1.42.1
+-scikit-learn==1.6.1
+-pandas==2.2.3
+-numpy==2.0.2
 
 ## Usage
 Streamlit App

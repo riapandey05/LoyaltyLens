@@ -1,64 +1,94 @@
-# LoyaltyLens: Customer Churn Prediction
+# 💡 LoyaltyLens: Customer Churn Prediction
 
-LoyaltyLens is a machine learning-based application designed to predict customer churn.It leverages a trained neural network model to analyze customer data and determine the likelihood of churn.
-The project includes a web-based interface built with Streamlit for user interaction and a Jupyter Notebook for experimentation and predictions.
+**LoyaltyLens** is a machine learning-powered web application that predicts the likelihood of customer churn based on user-provided data. It utilizes a trained neural network model to analyze customer behavior patterns and generate churn predictions. 
 
-## Features
-- **Customer Churn Prediction**: Predicts the likelihood of a customer leaving based on input data.
-- **Streamlit Web Interface**: User-friendly interface for entering customer data and viewing predictions.
-- **Data Preprocessing**: Includes scaling, encoding, and feature engineering.
-- **Experimentation**: Jupyter Notebook for model training, evaluation, and experimentation.
-- **Model Persistence**: Trained model and preprocessing objects are saved and reused for predictions.
-
-## Model Details
--Architecture: The model is a neural network built using TensorFlow/Keras.
--Input Features:
-CreditScore,
-Geography,
-Gender,
-Age,
-Tenure,
-Balance,
-NumOfProducts,
-HasCrCard,
-IsActiveMember,
-EstimatedSalary,
--Preprocessing:Features are scaled using StandardScaler.
-Categorical features are encoded using OneHotEncoder and LabelEncoder.
-
-Dependencies
-Key dependencies include:
-
--tensorflow==2.18.0
--streamlit==1.42.1
--scikit-learn==1.6.1
--pandas==2.2.3
--numpy==2.0.2
-
-## Usage
-Streamlit App
-Launch the app using the command above.
-Enter customer details such as Credit Score, Geography, Gender, etc.
-Click the "Predict Churn" button to view the prediction and churn probability.
-Jupyter Notebooks
-Use experiments.ipynb for training and evaluating models.
-Use prediction.ipynb for making predictions on new data.
+The application features a clean and interactive **Streamlit interface**, along with **Jupyter notebooks** for model experimentation and reproducibility.
 
 ---
 
-## Setup Instructions
+## 🚀 Features
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/LoyaltyLens.git
-   cd LoyaltyLens
+- 🔍 **Customer Churn Prediction**  
+  Predicts whether a customer is likely to churn using a trained ML model.
 
-2. **Install Dependencies:**
-    Use pipenv:
-       pipenv install
-       pipenv shell
+- 🖥️ **Streamlit Web Interface**  
+  Simple and intuitive UI for entering customer data and viewing prediction results.
 
-3. **Run the Application:**
-   streamlit run app.py
+- ⚙️ **Data Preprocessing**  
+  Includes numerical scaling, categorical encoding, and feature engineering.
 
+- 🧪 **Model Experimentation**  
+  Interactive Jupyter Notebooks (`experiments.ipynb`, `prediction.ipynb`) for training, evaluation, and predictions.
+
+- 💾 **Model Persistence**  
+  Saves trained model and preprocessing pipeline for reuse without retraining.
+
+---
+
+## 🧠 Model Details
+
+- **Architecture**: A fully connected neural network built using **TensorFlow/Keras**.
+- **Input Features**:
+  - `CreditScore`
+  - `Geography`
+  - `Gender`
+  - `Age`
+  - `Tenure`
+  - `Balance`
+  - `NumOfProducts`
+  - `HasCrCard`
+  - `IsActiveMember`
+  - `EstimatedSalary`
+
+- **Preprocessing**:
+  - **Scaling**: Numerical features are scaled using `StandardScaler`.
+  - **Encoding**:
+    - Categorical features like `Geography` → `OneHotEncoder`
+    - Binary features like `Gender` → `LabelEncoder`
+
+---
+
+## 📦 Dependencies
+
+```text
+tensorflow==2.18.0
+streamlit==1.42.1
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==2.0.2
+
+📲 Usage Instructions
+# 1. Clone the repository
+git clone https://github.com/your-username/LoyaltyLens.git
+cd LoyaltyLens
+
+# 2. Install dependencies using pipenv
+pipenv install
+pipenv shell
+
+# (Alternatively, use pip if you prefer)
+# pip install -r requirements.txt
+
+# 3. Run the Streamlit web application
+streamlit run app.py
+
+# 4. Interact with the app
+# - Enter customer details like Credit Score, Geography, Gender, Age, etc.
+# - Click "Predict Churn"
+# - View the model's prediction and churn probability
+
+# 5. (Optional) Use Jupyter Notebooks for experimentation
+# - Open 'experiments.ipynb' to train and evaluate models
+# - Open 'prediction.ipynb' to test predictions on new data
+
+📁 Project Structure
+LoyaltyLens/
+├── app.py                     # Streamlit application
+├── experiments.ipynb          # Model training & evaluation
+├── prediction.ipynb           # Making predictions
+├── model/                     # Saved model & preprocessing pipeline
+├── data/                      # Input data (raw/processed)
+├── Pipfile                    # Pipenv environment definition
+├── Pipfile.lock               # Locked versions of dependencies
+└── README.md                  # Project documentation
 
